@@ -1,6 +1,6 @@
 module HtmlBeautifier
   class RubyIndenter
-    INDENT_KEYWORDS = %w[ if elsif else unless while until begin for ]
+    INDENT_KEYWORDS = %w[ if elsif else unless while until begin for form_for ]
     OUTDENT_KEYWORDS = %w[ elsif else end ]
     RUBY_INDENT  = %r{
       ^ ( #{INDENT_KEYWORDS.join("|")} )\b
